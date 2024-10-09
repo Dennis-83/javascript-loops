@@ -12,8 +12,13 @@ const names = ["Henk", "Piet", "Fred", "Joop"];
 // Na jouw script zie je de aangepaste waardes:
 // console.log(names) geeft: ["Henkje", "Pietje", "Fredje", "Joopje"]
 
+console.log("==============Opdracht 1============================");
 
-
+console.log(names);
+for (let i = 0; i < names.length; i++) {
+    names[i] = names[i] + "je";
+}
+console.log(names);
 
 
 // ==========================================
@@ -21,17 +26,26 @@ const names = ["Henk", "Piet", "Fred", "Joop"];
 // Schrijf een script dat ieder EVEN getal in onderstaande array met 2 vermenigvuldigd, en ieder ONEVEN getal met 3
 // Zorg ervoor dat dit ook zou werken als de array wel 100 of 200 getallen zou bevatten!
 // ==========================================
+console.log("==============Opdracht 2============================");
 
 const numbers = [2, 4, 5, 29, 38];
+
+console.log(numbers);
+for (let i = 0; i < numbers.length; i++) {
+
+    if (numbers[i] % 2 === 0) {
+        numbers[i] = numbers[i] * 2;
+    } else {
+        numbers[i] = numbers[i] * 3;
+    }
+}
+console.log(numbers);
 
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
 // console.log(numbers) geeft: [2, 4, 5, 29, 38];
 // Na jouw script zie je de aangepaste waardes:
 // console.log(numbers) geeft: [ 4, 8, 15, 87, 76 ];
-
-
-
 
 
 // ==========================================
@@ -41,8 +55,19 @@ const numbers = [2, 4, 5, 29, 38];
 // Vervolgens moet de huidige waarde in de array overschreven worden met: "Het volume van [a] is [b]"
 // Zorg ervoor dat dit ook zou werken als de array wel 100 of 200 getallen zou bevatten!
 // ==========================================
-
+console.log("==============Opdracht 3============================");
 const squares = [30, 2, 8, 24, 11];
+
+console.log(squares);
+
+for (let i = 0; i < squares.length; i++) {
+    // console.log(squares[i]);
+    const measurement = squares[i];
+    const volume = measurement**3;
+    // console.log(volume);
+    squares[i] = `Het volume van ${measurement} is ${volume}`;
+}
+console.log(squares);
 
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
